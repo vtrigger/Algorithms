@@ -1,0 +1,22 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+	int n,m,i,j;
+	cout<<"enter 1st number\n";
+	cin>>m;
+	cout<<"enter 2nd number\n";
+	cin>>n;
+	for(i=m;i<n;i++)
+	{
+		for(j=2;j<i;j++){
+			if((i%j)==0){
+				break;
+			}
+		}
+		if(j==i){
+		cout<<i<<" ";
+		}
+	}
+}
